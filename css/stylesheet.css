@@ -1,0 +1,78 @@
+
+<link href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans:ital@0;1&family=Roboto:ital,wght@1,500&display=swap" rel="stylesheet"> 
+
+* {
+	box-sizing: border-box;
+}
+body {
+	background-color: #111111;
+}
+.heading {
+	font-style: italic;
+	color: #ffffff;
+	font-size: 200%;
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+	margin-top: 50px;
+}
+
+.col1, .col2, .col3{
+	background-color: #333333;
+	padding: 0px;
+	float: left;
+	border: 5px solid white;
+	border-radius: 10px;
+	
+	width: 30%;
+	margin: 1%;
+}
+
+.col_head1, .col_head2, .col_head3 {
+	color: #9acccc;
+	background-color: #282828;
+	font-family: 'Lato', sans-serif;
+	margin-top: 1%;
+	margin-right: 1%;
+	margin-left: 65%;
+	padding-right: 1px;
+	text-align: right;
+	padding-right: 5px;
+	border: 3px solid #ffffff;
+	border-radius: 15px;
+}
+
+.col_body {
+	color: lightgray;
+	font-style: italic;
+	background-color: #333333;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 100%;
+	text-align: center;
+	padding: 10px;
+}
+
+/*@media (min-width: 992px){*/
+	/*.col1, .col2, .col3{*/
+		/*float: left;*/
+		/*clear: right;*/
+		/*clear: left;
+		width: 30%;
+	}
+}
+*/
+
+@media (min-width: 768px) and (max-width: 991px){
+	.col1, .col2 {
+		width: 46.5%;
+	}
+	.col3 {
+		width: 97%;
+	}
+}
+@media (max-width:767px) and (min-width: 0px) {
+  	.col1, .col2, .col3 {
+  		float: left;
+		width: 97%;
+  	}
+
+}
